@@ -40,3 +40,21 @@ This project is registered on the tea protocol, which means:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details. 
+
+## Configuration
+
+This project uses environment variables for configuration. You can set the following variables in your environment:
+
+- `INFURA_API_KEY`: Your Infura API key
+- `TEA_TOKEN_ADDRESS`: The address of the TEA token contract
+- `TEA_STAKING_ADDRESS`: The address of the staking contract
+- `PROJECT_ADDRESS`: The address of your project
+- `GITHUB_TOKEN`: Your GitHub token
+
+You can set these variables in your environment by creating a `.env` file with the following content:
+```
+INFURA_API_KEY=your_infura_key
+TEA_TOKEN_ADDRESS=tea_contract_address
+TEA_STAKING_ADDRESS=staking_contract_address
+PROJECT_ADDRESS=your_project_address
+GITHUB_TOKEN=your_github_token 
