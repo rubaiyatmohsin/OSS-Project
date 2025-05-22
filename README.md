@@ -1,11 +1,12 @@
-# Tea Demo Project
+# Tea Protocol Rewards
 
-This is a demonstration project for the tea protocol on Sepolia testnet. The project showcases how to integrate with the tea protocol and participate in the OSS ecosystem.
+This project integrates with the tea protocol on Sepolia testnet to enable reward distribution for open-source contributions. The project showcases how to integrate with the tea protocol and participate in the OSS ecosystem.
 
 ## Features
 
-- Basic Node.js project structure
-- tea protocol integration
+- Advanced Node.js project structure
+- Tea protocol integration for rewards
+- Contribution tracking and scoring
 - Example of tea.yaml constitution
 
 ## Getting Started
@@ -26,6 +27,7 @@ This project is registered on the tea protocol, which means:
 - It participates in the tea ecosystem
 - Contributors can earn rewards based on the project's teaRank
 - The project can receive stakes from community members
+- Automated reward distribution for contributions
 
 ## Contributing
 

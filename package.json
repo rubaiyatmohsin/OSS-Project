@@ -1,7 +1,7 @@
 {
-  "name": "tea-demo-project",
+  "name": "tea-protocol-rewards",
   "version": "1.0.0",
-  "description": "A demo project for tea protocol on Sepolia testnet",
+  "description": "A blockchain rewards project for OSS contributions using tea protocol on Sepolia testnet",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,10 +13,10 @@
   },
   "keywords": [
     "tea-protocol",
-    "demo",
     "blockchain",
-    "oss"
+    "oss",
+    "rewards"
   ],
-  "author": "Your Name",
+  "author": "HeyBroMohsin",
   "license": "MIT"
 } 

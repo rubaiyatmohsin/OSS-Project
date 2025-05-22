@@ -1,35 +1,48 @@
-// Simple example module that demonstrates basic functionality
+// Tea Protocol Rewards - Contribution tracking and scoring module
 
-class TeaDemo {
+class TeaProtocolRewards {
     constructor() {
-        this.projectName = 'tea-demo-project';
+        this.projectName = 'tea-protocol-rewards';
         this.version = '1.0.0';
+        this.author = 'HeyBroMohsin';
     }
 
     getProjectInfo() {
         return {
             name: this.projectName,
             version: this.version,
-            description: 'A demo project for tea protocol on Sepolia testnet',
-            ecosystem: 'tea protocol'
+            description: 'A blockchain rewards project for OSS contributions using tea protocol',
+            ecosystem: 'tea protocol',
+            author: this.author
         };
     }
 
     calculateContribution(commits, issues, prs) {
-        // Simple mock calculation of contribution score
-        const score = (commits * 10) + (issues * 5) + (prs * 15);
+        // Enhanced contribution score calculation
+        const commitScore = commits * 10;  // Base commit score
+        const issueScore = issues * 5;     // Issue management score
+        const prScore = prs * 15;          // PR contribution score
+        
+        // Additional multipliers for quality and impact
+        const qualityMultiplier = 1.2;     // Can be adjusted based on code quality metrics
+        const impactMultiplier = 1.1;      // Can be adjusted based on community impact
+        
+        const totalScore = (commitScore + issueScore + prScore) * qualityMultiplier * impactMultiplier;
+        
         return {
-            contributionScore: score,
+            contributionScore: Math.round(totalScore),
             breakdown: {
-                commits: commits * 10,
-                issues: issues * 5,
-                pullRequests: prs * 15
+                commits: commitScore,
+                issues: issueScore,
+                pullRequests: prScore,
+                qualityBonus: qualityMultiplier,
+                impactBonus: impactMultiplier
             }
         };
     }
 }
 
 // Example usage
-const demo = new TeaDemo();
-console.log('Project Info:', demo.getProjectInfo());
-console.log('Sample Contribution:', demo.calculateContribution(5, 3, 2)); 
+const rewards = new TeaProtocolRewards();
+console.log('Project Info:', rewards.getProjectInfo());
+console.log('Sample Contribution:', rewards.calculateContribution(5, 3, 2)); 
