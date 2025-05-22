@@ -1,0 +1,4 @@
+version: 1
+codeOwners:
+  - "YOUR_TEA_PROTOCOL_ADDRESS" # Replace with your actual tea protocol address
+quorum: 1  # Since this is a demo project, we'll set quorum to 1 

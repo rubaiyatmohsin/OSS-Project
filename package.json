@@ -1,0 +1,22 @@
+{
+  "name": "tea-demo-project",
+  "version": "1.0.0",
+  "description": "A demo project for tea protocol on Sepolia testnet",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rubaiyatmohsin/OSS-Project.git"
+  },
+  "keywords": [
+    "tea-protocol",
+    "demo",
+    "blockchain",
+    "oss"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+} 
